@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apprenticeship Graduation Questionnaire</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    color: #434444;
+    background-color: #d4e9dd;
+  }
+  h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  h2 {
+    font-size: 1.1em;
+    text-transform: uppercase;
+    margin-top: 30px;
+  }
+  h3 {
+    font-size: 1em;
+    text-align: left;
+    margin-top: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+  }
+  fieldset {
+    border: 2px solid #302f2f;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  legend {
+    font-weight: bold;
+    padding: 0 10px;
+    color: #03a145;
+  }
+  .form-group {
+    margin-bottom: 12px;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: normal;
+  }
+  input[type="text"], input[type="date"], textarea {
+    width: 100%;
+    padding: 6px;
+    border: none;
+    border-bottom: 1px solid #03a145;
+    box-sizing: border-box;
+    font-size: 1em;
+  }
+  textarea {
+    border: 1px solid #2e9459;
+    min-height: 60px;
+    resize: vertical;
+  }
+  .checkbox-group, .radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 5px;
+  }
+  .checkbox-group label, .radio-group label {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    margin-bottom: 0;
+  }
+  input[type="checkbox"], input[type="radio"] {
+    margin-right: 5px;
+  }
+  .sub-question {
+    margin-left: 20px;
+    margin-top: 8px;
+  }
+  .header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .logo {
+  max-width: 120px;  
+  height: auto;
+  margin-bottom: 15px;
+}
+  .section-title {
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+  @media print {
+    body { margin: 0; padding: 10px; }
+    fieldset { page-break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<form action="https://formspree.io/f/xjgdbjje" method="POST">
+  <div class="header">
+    <img src="logo.png.png" class="logo">
+    <h1>KUAPA KOKOO FARMERS UNION</h1>
+    <h2>DATA COLLECTION EXERCISE FOR THE DEVELOPMENT OF DATABASE FOR APPRENTICESHIP GRADUATES</h2>
+    <h2>APPRENTICESHIP GRADUATION QUESTIONNAIRE</h2>
+  </div>
+
+
+  <fieldset>
+    <legend>Section A: Personal Information</legend>
+    
+    <div class="form-group">
+      <label>1. Full Name:</label>
+      <input type="text" name="full_name">
+    </div>
+
+    <div class="form-group">
+      <label>2. Gender:</label>
+      <div class="radio-group">
+        <label><input type="radio" name="gender" value="Male"> Male</label>
+        <label><input type="radio" name="gender" value="Female"> Female</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>3. Date of Birth:</label>
+      <input type="date" name="dob">
+    </div>
+
+    <div class="form-group">
+      <label>4. Contact Number:</label>
+      <input type="text" name="contact_number">
+    </div>
+
+    <div class="form-group">
+      <label>5. District/Community:</label>
+      <input type="text" name="district">
+    </div>
+
+    <div class="form-group">
+      <label>6. Trade/Skill Area:</label>
+      <input type="text" name="trade_skill">
+    </div>
+
+    <div class="form-group">
+      <label>7. Name of Training Institution/Master Trainer:</label>
+      <input type="text" name="training_institution">
+    </div>
+  </fieldset>
+
+  
+  <fieldset>
+    <legend>Section B: Training Background</legend>
+    
+    <div class="form-group">
+      <label>8. When did you start your apprenticeship?</label>
+      <input type="text" name="start_date">
+    </div>
+
+    <div class="form-group">
+      <label>9. When did you complete your training?</label>
+      <input type="text" name="completion_date">
+    </div>
+
+    <div class="form-group">
+      <label>10. Duration of training:</label>
+      <div class="radio-group">
+        <label><input type="radio" name="duration" value="6 months"> 6 months</label>
+        <label><input type="radio" name="duration" value="1 year"> 1 year</label>
+        <label><input type="radio" name="duration" value="2 years"> 2 years</label>
+        <label><input type="radio" name="duration" value="3 years"> 3 years</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>11. Did you complete the full training period?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="completed_full" value="Yes"> Yes</label>
+        <label><input type="radio" name="completed_full" value="No"> No</label>
+      </div>
+      <div class="sub-question">
+        <label>If No, explain:</label>
+        <input type="text" name="incomplete_reason">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>12. What type of training did you receive?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="training_type" value="Formal"> Formal</label>
+        <label><input type="radio" name="training_type" value="Informal"> Informal</label>
+        <label><input type="radio" name="training_type" value="Both"> Both</label>
+      </div>
+    </div>
+  </fieldset>
+
+ 
+  <fieldset>
+    <legend>Section C: Skills Acquisition</legend>
+    
+    <div class="form-group">
+      <label>13. What key skills have you acquired?</label>
+      <textarea name="key_skills"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label>How confident are you in practicing your trade independently?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="confidence" value="Very Confident"> Very Confident</label>
+        <label><input type="radio" name="confidence" value="Confident"> Confident</label>
+        <label><input type="radio" name="confidence" value="Not Sure"> Not Sure</label>
+        <label><input type="radio" name="confidence" value="Not Confident"> Not Confident</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>14. Did you receive any certification?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="certification" value="Yes"> Yes</label>
+        <label><input type="radio" name="certification" value="No"> No</label>
+      </div>
+      <div class="sub-question">
+        <label>If Yes, specify:</label>
+        <input type="text" name="certification_detail">
+      </div>
+    </div>
+  </fieldset>
+
+  
+  <fieldset>
+    <legend>Section D: Training Experience</legend>
+    
+    <div class="form-group">
+      <label>16. How would you rate the quality of training?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="quality" value="Excellent"> Excellent</label>
+        <label><input type="radio" name="quality" value="Good"> Good</label>
+        <label><input type="radio" name="quality" value="Fair"> Fair</label>
+        <label><input type="radio" name="quality" value="Poor"> Poor</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>17. Were training tools/equipment adequate?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="tools_adequate" value="Yes"> Yes</label>
+        <label><input type="radio" name="tools_adequate" value="No"> No</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>18. Did you face any challenges during training?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="challenges" value="Yes"> Yes</label>
+        <label><input type="radio" name="challenges" value="No"> No</label>
+      </div>
+      <div class="sub-question">
+        <label>If Yes, explain:</label>
+        <input type="text" name="challenge_detail">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>19. What did you like most about the training?</label>
+      <textarea name="liked_most"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label>20. What improvements would you suggest?</label>
+      <textarea name="improvements"></textarea>
+    </div>
+  </fieldset>
+
+  
+  <fieldset>
+    <legend>Section E: Post-Training Plans</legend>
+    
+    <div class="form-group">
+      <label>21. What are your plans after graduation?</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="plans" value="Start own business"> Start own business</label>
+        <label><input type="checkbox" name="plans" value="Seek employment"> Seek employment</label>
+        <label><input type="checkbox" name="plans" value="Continue training"> Continue training</label>
+        <label><input type="checkbox" name="plans" value="Other"> Other:</label>
+        <input type="text" name="plans_other" style="width:200px; display:inline-block;">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>22. Do you have the necessary tools to start work?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="tools_start" value="Yes"> Yes</label>
+        <label><input type="radio" name="tools_start" value="No"> No</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>23. Would you need any support (e.g., technical)?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="support_needed" value="Yes"> Yes</label>
+        <label><input type="radio" name="support_needed" value="No"> No</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>24. Are you interested in further support (e.g., mentoring, business training)?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="further_support" value="Yes"> Yes</label>
+        <label><input type="radio" name="further_support" value="No"> No</label>
+      </div>
+    </div>
+  </fieldset>
+
+  
+  <fieldset>
+    <legend>Section F: Program Impact</legend>
+    
+    <div class="form-group">
+      <label>25. Has the apprenticeship improved your livelihood prospects?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="livelihood_improved" value="Yes"> Yes</label>
+        <label><input type="radio" name="livelihood_improved" value="No"> No</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>26. How has the training impacted you?</label>
+      <textarea name="impact"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label>27. Would you recommend this apprenticeship program to others?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="recommend" value="Yes"> Yes</label>
+        <label><input type="radio" name="recommend" value="No"> No</label>
+      </div>
+    </div>
+  </fieldset>
+
+  
+  <fieldset>
+    <legend>Section G: Additional Comments</legend>
+    <div class="form-group">
+      <label>28. Any additional feedback or suggestions:</label>
+      <textarea name="additional_feedback"></textarea>
+    </div>
+  </fieldset>
+
+  
+  <fieldset>
+    <legend>Enumerator/Officer</legend>
+    <div class="form-group">
+      <label>Name of Officer:</label>
+      <input type="text" name="officer_name">
+    </div>
+    <div class="form-group">
+      <label>Date:</label>
+      <input type="date" name="officer_date">
+    </div>
+    <div class="form-group">
+      <label>Signature:</label>
+      <input type="text" name="officer_signature">
+    </div>
+  </fieldset>
+
+  
+  <fieldset>
+    <legend>PERFORMANCES OF SKILLS ACQUISITION</legend>
+    
+    <h3>Dressmaking Skills (Ability to)</h3>
+<div class="step-group">
+  <label>
+    Cutting and Sewing of dresses, African women styles (Kaba & Slit) etc.
+    <span>
+      <input type="radio" name="dress_cut_sew" value="Yes"> Yes 
+      <input type="radio" name="dress_cut_sew" value="No"> No
+    </span>
+  </label>
+
+  <label>
+    Taking good measurements
+    <span>
+      <input type="radio" name="dress_measure" value="Yes"> Yes 
+      <input type="radio" name="dress_measure" value="No"> No
+    </span>
+  </label>
+
+  <label>
+    Knitting/ hermings
+    <span>
+      <input type="radio" name="dress_knit" value="Yes"> Yes 
+      <input type="radio" name="dress_knit" value="No"> No
+    </span>
+  </label>
+
+  <label>
+    Stitching and stiffing etc
+    <span>
+      <input type="radio" name="dress_stitch" value="Yes"> Yes 
+      <input type="radio" name="dress_stitch" value="No"> No
+    </span>
+  </label>
+
+  <label>
+    Creating of bottom holes and fixing of bottoms
+    <span>
+      <input type="radio" name="dress_bottom" value="Yes"> Yes 
+      <input type="radio" name="dress_bottom" value="No"> No
+    </span>
+  </label>
+</div>
+
+   <h3>Hairdressing Skills (Ability to)</h3>
+<div class="step-group">
+  <label>
+    Braiding of Corn Rolls and Rasta
+    <span>
+      <input type="radio" name="hair_braid" value="Yes"> Yes 
+      <input type="radio" name="hair_braid" value="No"> No
+    </span>
+  </label>
+
+  <label>
+    Perming and retouching of natural hair
+    <span>
+      <input type="radio" name="hair_perm" value="Yes"> Yes 
+      <input type="radio" name="hair_perm" value="No"> No
+    </span>
+  </label>
+
+  <label>
+    Fixing of artificial hairs
+    <span>
+      <input type="radio" name="hair_artificial" value="Yes"> Yes 
+      <input type="radio" name="hair_artificial" value="No"> No
+    </span>
+  </label>
+
+  <label>
+    Manicure of artificial nails
+    <span>
+      <input type="radio" name="hair_manicure" value="Yes"> Yes 
+      <input type="radio" name="hair_manicure" value="No"> No
+    </span>
+  </label>
+
+  <label>
+    Pedicure of artificial nails
+    <span>
+      <input type="radio" name="hair_pedicure" value="Yes"> Yes 
+      <input type="radio" name="hair_pedicure" value="No"> No
+    </span>
+  </label>
+
+  <label>
+    Pony making
+    <span>
+      <input type="radio" name="hair_pony" value="Yes"> Yes 
+      <input type="radio" name="hair_pony" value="No"> No
+    </span>
+  </label>
+
+  <label>
+    Dreadlocks braiding
+    <span>
+      <input type="radio" name="hair_dreadlocks" value="Yes"> Yes 
+      <input type="radio" name="hair_dreadlocks" value="No"> No
+    </span>
+  </label>
+</div>
+
+    <h3>Tiling Skills (Ability to)</h3>
+    <div class="checkbox-group">
+      <label>Proper positioning of laying of tiles 
+        <input type="radio" name="tile_position" value="Yes"> Yes 
+        <input type="radio" name="tile_position" value="No"> No
+      </label>
+      <label>Mixing of required quantity and quality of mortar 
+        <input type="radio" name="tile_mortar" value="Yes"> Yes 
+        <input type="radio" name="tile_mortar" value="No"> No
+      </label>
+      <label>Taking proper measurement before laying of tiles 
+        <input type="radio" name="tile_measure" value="Yes"> Yes 
+        <input type="radio" name="tile_measure" value="No"> No
+      </label>
+      <label>Doing of all beautification of work done 
+        <input type="radio" name="tile_beautify" value="Yes"> Yes 
+        <input type="radio" name="tile_beautify" value="No"> No
+      </label>
+    </div>
+
+    <h3>Mechanic Skills (Ability to)</h3>
+<div class="step-group">
+  <label>
+    Repairing of damaged cars
+    <span>
+      <input type="radio" name="mech_repair" value="Yes"> Yes 
+      <input type="radio" name="mech_repair" value="No"> No
+    </span>
+  </label>
+
+  <label>
+    Fixing of required tools for damaged cars
+    <span>
+      <input type="radio" name="mech_tools" value="Yes"> Yes 
+      <input type="radio" name="mech_tools" value="No"> No
+    </span>
+  </label>
+
+  <label>
+    Fixing of car electrical faults
+    <span>
+      <input type="radio" name="mech_electrical" value="Yes"> Yes 
+      <input type="radio" name="mech_electrical" value="No"> No
+    </span>
+  </label>
+</div>
+  </fieldset>
+
+
+<input type="hidden" name="_subject" value="New Apprenticeship Graduate Submission">
+
+
+<input type="hidden" name="_next" value="thank-you.html">
+
+  <div style="text-align:center; margin-top:20px;">
+    <button type="submit" style="padding:10px 30px; font-size:1em;">Submit</button>
+  </div>
+</form>
+
+</body>
+</html>
+
